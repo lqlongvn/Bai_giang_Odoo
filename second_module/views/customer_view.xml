@@ -7,7 +7,7 @@
             <field name="model">customerfirst</field>
             <field name="inherit_id" ref="first_module.customer_tree_view"/>
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='name']" position="after"> <!-- after, before, replace, attributes, inside -->
+                <xpath expr="//field" position="after"> <!-- after, before, replace, attributes, inside -->
                     <field name="phone"/>
                 </xpath>
             </field>
