@@ -12,4 +12,4 @@ access_employee_manager,access_employee_manager,model_employee,first_module.grou
 access_transient_user,access_transient_user,model_employee_leave_reason,first_module.group_product_user,1,0,1,0
 access_transient_manager,access_transient_manager,model_employee_leave_reason,first_module.group_product_manager,1,1,1,1
 
-
+access_customer_manager,access_customer_manager,model_customerfirst,first_module.group_product_manager,1,1,1,1
