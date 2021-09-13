@@ -10,6 +10,7 @@
     ],
     'data': [
         'views/customer_view.xml',
+        'views/employee_view.xml',
     ],
     'installable': True,
     'application': True,

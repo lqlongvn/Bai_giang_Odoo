@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="employee_tree_view_inherit" model="ir.ui.view">
+            <field name="name">Add experience field</field>
+            <field name="model">employee</field>
+            <field name="inherit_id" ref="first_module.employee_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='state']" position="before">
+                    <field name="experience"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
