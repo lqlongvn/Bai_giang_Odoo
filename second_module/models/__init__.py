@@ -1,1 +1,1 @@
-from . import customer, employee
+from . import customer, employee, res_partner

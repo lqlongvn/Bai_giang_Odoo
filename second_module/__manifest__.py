@@ -6,11 +6,13 @@
     'category': 'Other',
     'author': 'mr. Long',
     'depends': [
+        'base',
         'first_module',
     ],
     'data': [
         'views/customer_view.xml',
         'views/employee_view.xml',
+        'views/res_partner_view.xml',
     ],
     'installable': True,
     'application': True,
