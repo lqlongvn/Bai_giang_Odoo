@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        
-        
-    
+        <record id="base_view_partner_tree_inherit" model="ir.ui.view">
+            <field name="name">view.user.tree.inherit</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="inside">
+                    <field name="chucvu"/>
+                </xpath>
+            </field>
+        </record>
     </data>
 </odoo>
