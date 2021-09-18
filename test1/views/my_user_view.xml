@@ -16,7 +16,7 @@
             <field name="model">res.users</field>
             <field name="inherit_id" ref="base.view_users_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//form" position="inside">
+                <xpath expr="//field[@name='name']" position="after">
                     <field name="chucvu"/>
                 </xpath>
             </field>
