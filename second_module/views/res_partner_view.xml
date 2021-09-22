@@ -9,6 +9,9 @@
                 <xpath expr="//field[@name='vat']" position="after">
                     <field name="gender"/>
                 </xpath>
+                <xpath expr="//field[@name='category_id']" position="after">
+                    <field name="limit_credit"/>
+                </xpath>
             </field>
         </record>
         <record id="base_view_partner_tree_inherit" model="ir.ui.view">

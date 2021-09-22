@@ -5,4 +5,7 @@ class ResPartner(models.Model):
 
     gender = fields.Selection(selection=[('male', 'Male'), ('female', 'Female')], string='Gender')
 
+    limit_credit = fields.Float(string= 'Nhập vào một giá trị bất kỳ')
+
+
 
