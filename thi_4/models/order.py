@@ -10,3 +10,10 @@ class Order(models.Model):
 
     customer_id = fields.Many2one(comodel_name='customer4', string='Customers')
     orderline_ids = fields.One2many(comodel_name='orderline4', inverse_name='order4_id', string='Order Lines')
+
+    state = fields.Selection(
+        selection=[('0', 'Draft'), ('1', 'Doing'), ('2', 'Done'), ('3', 'Cancel order')],
+        string='Trạng thái')
+
+    def cancel_order(self):
+        self.state = '0'

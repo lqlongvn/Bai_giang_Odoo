@@ -10,7 +10,7 @@
                     <field name="order_date"/>
                     <field name="customer_id"/>
                     <field name="orderline_ids"/>
-<!--                    <field name="state"/>-->
+                    <field name="state"/>
                 </tree>
             </field>
         </record>
@@ -20,17 +20,21 @@
             <field name="model">order4</field>
             <field name="arch" type="xml">
                 <form string="">
+                     <header>
+                        <button name="cancel_order" string="Cancel Order" type="object" class="btn-primary"/>
+                         <field name="state" widget="statusbar"/>
+                    </header>
                     <sheet>
                         <group>
                             <group>
                                 <field name="name"/>
                                 <field name="order_date"/>
                                 <field name="customer_id"/>
-                                <field name="orderline_ids"/>
                             </group>
-<!--                            <group>-->
+                            <group>
+                                <field name="orderline_ids"/>
 <!--                                <field name="state"/>-->
-<!--                            </group>-->
+                            </group>
                         </group>
                     </sheet>
                 </form>
