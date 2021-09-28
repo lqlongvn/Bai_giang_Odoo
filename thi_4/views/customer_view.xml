@@ -10,6 +10,7 @@
                     <field name="phone"/>
                     <field name="address"/>
                     <field name="gender"/>
+                    <field name="order_ids"/>
                 </tree>
             </field>
         </record>
@@ -23,6 +24,7 @@
                             <group>
                                 <field name="name"/>
                                 <field name="phone"/>
+                                <field name="order_ids"/>
                             </group>
                             <group>
                                 <field name="address" attrs="{'invisible': [('phone', '=', False)]}"/>

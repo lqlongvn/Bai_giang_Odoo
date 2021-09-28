@@ -7,3 +7,5 @@ class Order(models.Model):
 
     name = fields.Char(string='Tên đơn hàng')
     order_date = fields.Date(string='Ngày đơn hàng')
+
+    customer_id = fields.Many2one(comodel_name='customer4', string='Customers')
