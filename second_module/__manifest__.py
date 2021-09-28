@@ -8,6 +8,7 @@
     'depends': [
         'base',
         'first_module',
+        'sale',
     ],
     'data': [
         'views/customer_view.xml',
