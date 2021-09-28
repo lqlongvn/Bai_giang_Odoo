@@ -11,6 +11,7 @@
                     <field name="qty"/>
                     <field name="unit_price"/>
                     <field name="order4_id"/>
+                    <field name="product4_id"/>
                 </tree>
             </field>
         </record>
@@ -26,6 +27,7 @@
                                 <field name="name"/>
                                 <field name="created_date"/>
                                 <field name="order4_id"/>
+                                <field name="product4_id"/>
                             </group>
                             <group>
                                 <field name="qty"/>

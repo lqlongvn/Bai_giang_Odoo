@@ -9,3 +9,5 @@ class Products(models.Model):
     description = fields.Char(string='Mô tả product')
     product_date = fields.Date(string='Ngày của product')
     product_price = fields.Integer(string='Giá của product')
+
+    orderline_ids = fields.One2many(comodel_name='orderline4', inverse_name='product4_id', string='Order Line')
