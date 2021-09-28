@@ -4,3 +4,5 @@ access_first_module_customer_manager,access_customer_manager,model_customer4,fir
 access_first_module_order_manager,access_order_manager,model_order4,first_module.group_product_manager,1,1,1,1
 
 access_first_module_orderline_manager,access_orderline_manager,model_orderline4,first_module.group_product_manager,1,1,1,1
+
+access_first_module_product_manager,access_product_manager,model_product4,first_module.group_product_manager,1,1,1,1
