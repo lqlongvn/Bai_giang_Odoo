@@ -9,3 +9,5 @@ class OrderLine(models.Model):
     created_date = fields.Date(string='Ngày đơn hàng')
     qty = fields.Integer(string='Số lượng')
     unit_price = fields.Integer(string='Đơn giá')
+
+    order4_id = fields.Many2one(comodel_name='order4', string='Order')

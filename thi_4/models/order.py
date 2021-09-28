@@ -9,3 +9,4 @@ class Order(models.Model):
     order_date = fields.Date(string='Ngày đơn hàng')
 
     customer_id = fields.Many2one(comodel_name='customer4', string='Customers')
+    orderline_ids = fields.One2many(comodel_name='orderline4', inverse_name='order4_id', string='Order Lines')
