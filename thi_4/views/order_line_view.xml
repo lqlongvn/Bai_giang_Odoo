@@ -10,6 +10,7 @@
                     <field name="created_date"/>
                     <field name="qty"/>
                     <field name="unit_price"/>
+                    <field name="thanhtien"/>
                     <field name="order4_id"/>
                     <field name="product4_id"/>
                 </tree>
@@ -32,6 +33,7 @@
                             <group>
                                 <field name="qty"/>
                                 <field name="unit_price"/>
+                                <field name="thanhtien"/>
                             </group>
                         </group>
                     </sheet>

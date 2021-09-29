@@ -1,4 +1,5 @@
 from odoo import fields, models, api
+from odoo.exceptions import ValidationError
 
 # model order (customer_id, order_date, total_amount=sum(line.sub_total), order_ids)
 
@@ -17,3 +18,11 @@ class Order(models.Model):
 
     def cancel_order(self):
         self.state = '0'
+
+    def unlink(self):
+        if self.state != '2':
+            return super(Order, self).unlink()
+        else:
+            raise ValidationError('Order already Done, cannot be deleted!')
+
+

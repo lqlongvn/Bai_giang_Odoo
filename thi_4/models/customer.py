@@ -19,3 +19,14 @@ class Customer(models.Model):
         for customer in self:
             customer.customer_order_count = len(customer.order_ids)
         return customer.customer_order_count
+
+    @api.model
+    def create(self, vals):
+        vals['name'] = vals['name'].title()
+        record = super(Customer, self).create(vals)
+        return record
+
+    def write(self, vals):
+        vals['name'] = vals['name'].title()
+        result = super(Customer, self).write(vals)
+        return result
