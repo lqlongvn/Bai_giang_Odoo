@@ -8,3 +8,9 @@ access_first_module_orderline_manager,access_orderline_manager,model_orderline4,
 access_first_module_product_manager,access_product_manager,model_product4,first_module.group_product_manager,1,1,1,1
 
 access_transient_manager,access_transient_manager,model_customertotalmoney4,first_module.group_product_manager,1,1,1,1
+
+access_first_module_customer_user,access_customer_user,model_customer4,first_module.group_product_user,1,1,1,1
+access_first_module_order_user,access_order_user,model_order4,first_module.group_product_user,1,1,1,1
+access_first_module_orderline_user,access_orderline_user,model_orderline4,first_module.group_product_user,1,1,1,1
+access_first_module_product_user,access_product_user,model_product4,first_module.group_product_user,1,1,1,1
+access_transient_user,access_transient_user,model_customertotalmoney4,first_module.group_product_user,1,1,1,1
