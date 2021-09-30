@@ -47,6 +47,21 @@
         <menuitem id="product_menu_1" name="Product" parent = "thi_4.customer_root_menu" action="thi_4.product_action_1" sequence="3"
         />
 
+        <record id="products_search_view" model="ir.ui.view">
+            <field name="name">Products Search</field>
+            <field name="model">product4</field>
+            <field name="arch" type="xml">
+                <search string="">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <group>
+                        <filter string="Group By Date" name="group_products_by_date"
+                                context="{'group_by':'product_date'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
 
     </data>
 </odoo>

@@ -51,6 +51,23 @@
         <menuitem id="order_menu_1" name="Order" parent = "thi_4.customer_root_menu" action="thi_4.order_action_1" sequence="3"
         />
 
+        <record id="order_search_view" model="ir.ui.view">
+            <field name="name">Order Search</field>
+            <field name="model">order4</field>
+            <field name="arch" type="xml">
+                <search string="">
+                    <field name="customer_id"/>
+                    <group>
+                        <filter string="Group By Order Date" name="group_order_by_date"
+                                context="{'group_by':'order_date'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+
+
+
 
     </data>
 </odoo>
