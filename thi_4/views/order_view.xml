@@ -49,7 +49,7 @@
         </record>
 
         <menuitem id="order_menu_1" name="Order" parent = "thi_4.customer_root_menu" action="thi_4.order_action_1" sequence="3"
-                  groups="thi_4.group_order_manager4"
+                  groups="thi_4.group_order_manager4,thi_4.group_order_user4"
         />
 
         <record id="order_search_view" model="ir.ui.view">
