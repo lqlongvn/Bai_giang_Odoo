@@ -14,3 +14,8 @@ access_first_module_order_user,access_order_user,model_order4,first_module.group
 access_first_module_orderline_user,access_orderline_user,model_orderline4,first_module.group_product_user,1,1,1,1
 access_first_module_product_user,access_product_user,model_product4,first_module.group_product_user,1,1,1,1
 access_transient_user,access_transient_user,model_customertotalmoney4,first_module.group_product_user,1,1,1,1
+
+access_order_manager,access_order_manager,model_order4,thi_4.group_order_manager4,1,1,1,1
+access_orderline_manager,access_orderline_manager,model_orderline4,thi_4.group_order_manager4,1,1,1,1
+
+access_customer_manager,access_customer_manager,model_customer4,thi_4.group_customer_manager4,1,1,1,1
