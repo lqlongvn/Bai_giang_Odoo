@@ -21,3 +21,4 @@ access_orderline_manager,access_orderline_manager,model_orderline4,thi_4.group_o
 access_customer_manager,access_customer_manager,model_customer4,thi_4.group_customer_manager4,1,1,1,1
 
 access_customer_user,access_customer_user,model_customer4,thi_4.group_customer_user4,1,0,0,0
+access_order_user,access_order_user,model_order4,thi_4.group_order_user4,1,0,0,0
