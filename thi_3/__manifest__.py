@@ -4,15 +4,15 @@
     'version': '1.0',
     'summary': 'Thi 3 project summary',
     'sequence': 1,
-    'author': 'Long (Thi 3)',
+    'author': 'Long (Thi)',
     'description': """
         Thi project description
     """,
     'category': 'Other',
     'website': '',
-    'depends': ['sales_team'],
+    'depends': [],
     'data': [
-        'views/customer_view.xml',
+        'views/sanpham_view.xml',
         'security/ir.model.access.csv',
     ],
     'installable': True,
