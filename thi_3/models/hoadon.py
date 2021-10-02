@@ -1,6 +1,6 @@
 from odoo import fields, models, api
 
-# hoadon (name, ngay, tongtien)
+# hoadon (name, ngay, tongtien (tính từ tổng tiền hóa đơn chi tiết))
 
 class HoaDon(models.Model):
     _name = 'hoadon'

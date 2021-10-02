@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hoadonchitiet_tree_view" model="ir.ui.view">
+            <field name="name">Hoa Don Chi tiet Tree View</field>
+            <field name="model">hoadonchitiet</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="name"/>
+                    <field name="soluong"/>
+                    <field name="dongia"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hoadonchitiet_form_view" model="ir.ui.view">
+            <field name="name">Hoa Don Chi Tiet Form View</field>
+            <field name="model">hoadonchitiet</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="soluong"/>
+                            </group>
+                            <group>
+                                <field name="dongia"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hoadonchitiet_action_1" model="ir.actions.act_window">
+            <field name="name">HoaDon</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hoadonchitiet</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="hoadonchitiet_menu_1" name="Hoa Don Chi Tiet" parent="thi_3.sanpham_root_menu" action="thi_3.hoadonchitiet_action_1"
+                  sequence="4"
+        />
+
+
+    </data>
+</odoo>

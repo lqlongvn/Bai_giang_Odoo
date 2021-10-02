@@ -14,6 +14,7 @@
     'data': [
         'views/sanpham_view.xml',
         'views/hoadon_view.xml',
+        'views/hoadonchitiet_view.xml',
         'security/ir.model.access.csv',
     ],
     'installable': True,
