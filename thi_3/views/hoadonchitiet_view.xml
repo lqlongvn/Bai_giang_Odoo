@@ -9,6 +9,7 @@
                     <field name="name"/>
                     <field name="soluong"/>
                     <field name="dongia"/>
+                    <field name="hoadon_id"/>
                 </tree>
             </field>
         </record>
@@ -25,6 +26,7 @@
                             </group>
                             <group>
                                 <field name="dongia"/>
+                                <field name="hoadon_id"/>
                             </group>
                         </group>
                     </sheet>

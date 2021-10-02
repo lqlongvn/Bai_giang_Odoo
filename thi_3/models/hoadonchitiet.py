@@ -9,3 +9,7 @@ class HoaDonChiTiet(models.Model):
     soluong = fields.Integer(string='Số lượng')
     dongia = fields.Integer(string='Đơn giá')
     # tongtien = fields.Integer(string='Tổng tiền')
+
+    hoadon_id = fields.Many2one(comodel_name='hoadon', string='Hóa đơn tổng')
+
+    # customer_id = fields.Many2one(comodel_name='customer4', string='Customers')
