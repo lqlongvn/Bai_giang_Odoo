@@ -1,2 +1,2 @@
-from . import sanpham
+from . import sanpham, hoadon
 # , order, order_line, product

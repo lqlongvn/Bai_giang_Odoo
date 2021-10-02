@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hoadon_tree_view" model="ir.ui.view">
+            <field name="name">Hoa Don Tree View</field>
+            <field name="model">hoadon</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="name"/>
+                    <field name="ngay"/>
+                    <field name="tongtien"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hoadon_form_view" model="ir.ui.view">
+            <field name="name">Hoa Don  Form View</field>
+            <field name="model">hoadon</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="ngay"/>
+                            </group>
+                            <group>
+                                <field name="tongtien"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hoadon_action_1" model="ir.actions.act_window">
+            <field name="name">HoaDon</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hoadon</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="hoadon_menu_1" name="Hoa Don" parent="thi_3.sanpham_root_menu" action="thi_3.hoadon_action_1"
+                  sequence="3"
+        />
+
+
+    </data>
+</odoo>
