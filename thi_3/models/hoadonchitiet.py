@@ -11,5 +11,6 @@ class HoaDonChiTiet(models.Model):
     # tongtien = fields.Integer(string='Tổng tiền')
 
     hoadon_id = fields.Many2one(comodel_name='hoadon', string='Hóa đơn tổng')
+    sp_id = fields.Many2one(comodel_name='sản phẩm', string='Sản phẩm có Hóa đơn chi tiết')
 
     # customer_id = fields.Many2one(comodel_name='customer4', string='Customers')

@@ -9,6 +9,7 @@
                     <field name="name"/>
                     <field name="gia_sanpham"/>
                     <field name="mota"/>
+                    <field name="hoadonchitietsp_ids"/>
                 </tree>
             </field>
         </record>
@@ -25,6 +26,7 @@
                             </group>
                             <group>
                                 <field name="mota"/>
+                                <field name="hoadonchitietsp_ids"/>
                             </group>
                         </group>
                     </sheet>

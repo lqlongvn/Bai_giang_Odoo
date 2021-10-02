@@ -9,3 +9,7 @@ class SanPham(models.Model):
     gia_sanpham = fields.Integer(string='Giá sản phẩm')
     mota = fields.Char(string='Mô tả')
 
+    hoadonchitietsp_ids = fields.One2many(comodel_name='hoadonchitiet', inverse_name='sp_id',
+                                        string='Hóa đơn chi tiết của Sản phẩm')
+
+
