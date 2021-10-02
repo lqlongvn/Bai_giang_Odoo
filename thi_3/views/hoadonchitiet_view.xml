@@ -9,6 +9,7 @@
                     <field name="name"/>
                     <field name="soluong"/>
                     <field name="dongia"/>
+                    <field name="thanhtien"/>
                     <field name="hoadon_id"/>
                     <field name="sp_id"/>
                 </tree>
@@ -24,9 +25,10 @@
                             <group>
                                 <field name="name"/>
                                 <field name="soluong"/>
+                                <field name="dongia"/>
+                                <field name="thanhtien"/>
                             </group>
                             <group>
-                                <field name="dongia"/>
                                 <field name="hoadon_id"/>
                                 <field name="sp_id"/>
                             </group>
@@ -36,8 +38,8 @@
             </field>
         </record>
 
-        <!-- Menu độc lập cho Hóa đơn chi tiết; Do đề bài không yêu cầu, nên tạm comment lại    -->
-
+        <!-- Dưới đây là Menu và Form độc lập cho Hóa đơn chi tiết;
+        Do đề bài không yêu cầu giao diện độc lập cho Hóa đơn chi tiết, nên tạm comment lại    -->
 <!--        <record id="hoadonchitiet_action_1" model="ir.actions.act_window">-->
 <!--            <field name="name">HoaDonChiTiet</field>-->
 <!--            <field name="type">ir.actions.act_window</field>-->

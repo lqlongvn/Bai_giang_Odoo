@@ -8,9 +8,15 @@ class HoaDonChiTiet(models.Model):
     name = fields.Char(string='Tên Hóa đơn')
     soluong = fields.Integer(string='Số lượng')
     dongia = fields.Integer(string='Đơn giá')
-    # tongtien = fields.Integer(string='Tổng tiền')
+    thanhtien = fields.Integer(string='Thành tiền', compute='total_money')
 
     hoadon_id = fields.Many2one(comodel_name='hoadon', string='Hóa đơn tổng')
     sp_id = fields.Many2one(comodel_name='sản phẩm', string='Sản phẩm có Hóa đơn chi tiết')
 
-    # customer_id = fields.Many2one(comodel_name='customer4', string='Customers')
+
+    @api.depends('soluong', 'dongia')
+    def total_money(self):
+        for hd_chitiet in self:
+            hd_chitiet.thanhtien = hd_chitiet.soluong * hd_chitiet.dongia
+
+
