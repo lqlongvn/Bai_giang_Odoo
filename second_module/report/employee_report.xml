@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+                id="action_report_employee"
+                string="Employee Info"
+                model="employee"
+                report_type="qweb-pdf"
+                file="second_module.report_employee"
+                name="second_module.report_employee"
+                print_report_name="'Employee %s' % (object.name)"
+        />
+        <template id="report_employee">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr class="o_report_header">
+                                    <th class="o_report_line_header">Name</th>
+                                    <th class="o_report_line_header">Experience</th>
+                                    <th class="o_report_line_header">State</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="docs" t-as="employee">
+                                    <tr>
+                                        <td>
+                                            <span t-field="employee.name"/>
+                                        </td>
+                                        <td>
+                                            <t t-if="employee.experience">
+                                                <span t-field="employee.experience"/>
+                                            </t>
+                                        </td>
+                                        <td>
+                                            <span t-field="employee.state"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+
+        </template>
+    </data>
+</odoo>
