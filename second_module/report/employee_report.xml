@@ -24,19 +24,6 @@
                             </thead>
                             <tbody>
                                 <t t-foreach="docs" t-as="employee">
-                                    <tr>
-                                        <td>
-                                            <span t-field="employee.name"/>
-                                        </td>
-                                        <td>
-                                            <t t-if="employee.experience">
-                                                <span t-field="employee.experience"/>
-                                            </t>
-                                        </td>
-                                        <td>
-                                            <span t-field="employee.state"/>
-                                        </td>
-                                    </tr>
                                 </t>
                             </tbody>
                         </table>
